@@ -8,8 +8,10 @@ import Button from '../components/button';
 export default class Home extends Component {
   render(){
     return (
-      <View>
-        <Logo />
+      <View style={styles.container}>
+        <View style={styles.logo}>
+          <Logo/>
+        </View>
         <FbLoginButton />
         <Button buttonStyle={saveLocationButton} title='SAVE LOCATION' />
         <Button buttonStyle={visitedPlacesButton} title='VISITED PLACES' />
@@ -37,7 +39,12 @@ const visitedPlacesButton = {
 }
 
 const styles = StyleSheet.create({
-  loginButton: {
-    borderRadius: 0
+  container: {
+    backgroundColor: '#F1F5F6',
+    flex: 1,
+    flexDirection: 'column',
+  },
+  logo:{
+    flex: 0.8,
   }
 });

@@ -18,6 +18,7 @@ const styles = StyleSheet.create({
   logo: {
     color: '#FF4630',
     fontSize: 40,
-    fontWeight: 'bold'
+    fontWeight: 'bold',
+    textAlign: 'center'
   }
 });
