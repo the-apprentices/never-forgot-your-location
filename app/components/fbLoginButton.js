@@ -3,8 +3,8 @@ import { View, StyleSheet } from 'react-native';
 import { SocialIcon } from 'react-native-elements';
 
 export default class fbLoginButton extends Component {
-  login(){
-    console.log('login pressed');
+  onClick(){
+    console.log('hello');
   }
   render(){
     return (
@@ -16,7 +16,7 @@ export default class fbLoginButton extends Component {
           title='SIGN IN WITH FACEBOOK'
           type='facebook'
           style={styles.loginButton}
-          onPress={ () => this.login() }
+          onPress={ () => this.onClick() }
         />
       </View>
     )

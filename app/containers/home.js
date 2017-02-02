@@ -1,11 +1,30 @@
 import React, { Component } from 'react';
 import { View, StyleSheet } from 'react-native';
+import { LoginManager, AccessToken } from 'react-native-fbsdk';
 
 import Logo from '../components/logo';
 import FbLoginButton from '../components/fbLoginButton';
 import Button from '../components/button';
 
 export default class Home extends Component {
+  constructor(props){
+    super(props);
+  }
+
+  fbLogin(){
+    console.log('hello');
+    // Attempt a login using the Facebook login dialog asking for default permissions.
+    // LoginManager.logInWithReadPermissions(['email','public_profile'])
+    // .then(result => {
+    //   if (result.isCancelled) return console.log('Login cancelled');
+    //   AccessToken.getCurrentAccessToken().then(data => {
+    //     // return this.props.dispatch(fbLogin(data));
+    //     console.log(data);
+    //   });
+    // }, err => {
+    //   console.log('Login fail with error: ', error);
+    // });
+  }
   render(){
     return (
       <View style={styles.container}>
@@ -13,7 +32,7 @@ export default class Home extends Component {
           <Logo/>
         </View>
         <View style={[styles.social, styles.margin20, styles.col2]}>
-          <FbLoginButton />
+          <FbLoginButton onClick={this.fbLogin}/>
         </View>
         <View style={[styles.button, styles.margin15, styles.col3]}>
           <Button buttonStyle={saveLocationButton} title='SAVE LOCATION' />
