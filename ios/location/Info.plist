@@ -62,5 +62,27 @@
       <string>SimpleLineIcons.ttf</string>
       <string>Zocial.ttf</string>
     </array>
+    <key>CFBundleURLTypes</key>
+    <array>
+      <dict>
+        <key>CFBundleURLSchemes</key>
+        <array>
+          <string>fb1870611156552216</string>
+        </array>
+      </dict>
+    </array>
+    <key>FacebookAppID</key>
+    <string>1870611156552216</string>
+    <key>FacebookDisplayName</key>
+    <string>never forget your location</string>
+    <key>LSApplicationQueriesSchemes</key>
+    <array>
+      <string>fbapi</string>
+      <string>fb-messenger-api</string>
+      <string>fbauth2</string>
+      <string>fbshareextension</string>
+    </array>
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>FOR PROFILE PICTURE</string>
   </dict>
 </plist>
