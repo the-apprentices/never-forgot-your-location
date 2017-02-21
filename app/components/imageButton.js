@@ -17,14 +17,15 @@ export default class imageButton extends Component {
 
 const styles = StyleSheet.create({
   button: {
-    flexGrow: 1,
     marginLeft: 10,
     marginRight: 10,
-    height: 45
+    height: 45,
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center'
   },
   image: {
-    flex: 1,
-    height: 45,
+    // height: 45,
     resizeMode: 'contain'
   }
 });

@@ -35,16 +35,16 @@ export default class Home extends Component {
   render(){
     return (
       <View style={styles.container}>
-        <View style={[styles.logo, styles.col1]}>
+        <View>
           <Logo/>
         </View>
-        <View style={[styles.social]}>
+        <View>
           <ImageButton onClick={this.fbLogin} imageUrl={require('../images/facebook.png')}/>
         </View>
-        <View style={[styles.button, styles.margin15, styles.col3]}>
+        <View>
           <Button title='SAVE LOCATION' />
         </View>
-        <View style={[styles.button, styles.margin15, styles.col4]}>
+        <View>
           <Button title='VISITED PLACES' />
         </View>
       </View>
@@ -52,6 +52,14 @@ export default class Home extends Component {
   }
 }
 
+const styles = StyleSheet.create({
+  container: {
+    backgroundColor: '#F1F5F6',
+    flexGrow: 1,
+    flexDirection: 'column',
+    justifyContent: 'space-around'
+  }
+});
 // <View style={[styles.social, styles.margin20, styles.col2]}>
 
 // const saveLocationButton = {
@@ -72,55 +80,55 @@ export default class Home extends Component {
 //   borderWidth: 1
 // }
 
-const styles = StyleSheet.create({
-  container: {
-    backgroundColor: '#F1F5F6',
-    flexGrow: 1,
-    flexDirection: 'column',
-    justifyContent: 'flex-start'
-  },
-  logo: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'center'
-  },
-  social: {
-    flexDirection: 'row',
-    alignItems: 'flex-start',
-    justifyContent: 'flex-start',
-    flexGrow: 0.4
-  },
-  button: {
-    flexDirection: 'column',
-    alignItems: 'flex-start',
-    justifyContent: 'flex-start',
-  },
-  margin20: {
-    justifyContent: 'flex-start',
-    alignItems: 'stretch',
-    marginLeft: 20,
-    marginRight: 20
-  },
-  margin15: {
-    marginLeft: 8,
-    marginRight: 8,
-  },
-  col1: {
-    flexGrow: 0.8,
-    top: 10
-  },
-  col2: {
-    flexGrow: 1.2,
-    // marginTop:
-  },
-  col3: {
-    flexGrow: 0.2,
-    alignItems: 'stretch',
-    justifyContent: 'center',
-  },
-  col4: {
-    flexGrow: 0.45,
-    alignItems: 'stretch',
-    justifyContent: 'center',
-  }
-});
+// const styles = StyleSheet.create({
+//   container: {
+//     backgroundColor: '#F1F5F6',
+//     flexGrow: 1,
+//     flexDirection: 'column',
+//     justifyContent: 'flex-start'
+//   },
+//   logo: {
+//     flexDirection: 'row',
+//     alignItems: 'center',
+//     justifyContent: 'center'
+//   },
+//   social: {
+//     flexDirection: 'row',
+//     alignItems: 'flex-start',
+//     justifyContent: 'flex-start',
+//     flexGrow: 0.4
+//   },
+//   button: {
+//     flexDirection: 'column',
+//     alignItems: 'flex-start',
+//     justifyContent: 'flex-start',
+//   },
+//   margin20: {
+//     justifyContent: 'flex-start',
+//     alignItems: 'stretch',
+//     marginLeft: 20,
+//     marginRight: 20
+//   },
+//   margin15: {
+//     marginLeft: 8,
+//     marginRight: 8,
+//   },
+//   col1: {
+//     flexGrow: 0.8,
+//     top: 10
+//   },
+//   col2: {
+//     flexGrow: 1.2,
+//     // marginTop:
+//   },
+//   col3: {
+//     flexGrow: 0.2,
+//     alignItems: 'stretch',
+//     justifyContent: 'center',
+//   },
+//   col4: {
+//     flexGrow: 0.45,
+//     alignItems: 'stretch',
+//     justifyContent: 'center',
+//   }
+// });
